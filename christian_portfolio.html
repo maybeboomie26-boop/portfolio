@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Christian Rei G. Aguana — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0b5fff;
+      --muted:#6b7280;
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --radius:12px;
+      font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b1220;line-height:1.5}
+    .container{max-width:980px;margin:28px auto;padding:24px}
+
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6c9cff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:20px}
+    .subtitle{color:var(--muted);font-size:14px;margin-top:6px}
+
+    nav{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:var(--card);border:1px solid #e6e9ee;padding:8px 12px;border-radius:10px;text-decoration:none;color:inherit;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,18,30,0.06)}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+
+    .projects .project{border-radius:10px;padding:12px;border:1px solid #eef2f7;margin-bottom:12px}
+    .project h3{margin:0 0 6px 0;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    .skills ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+    .skills li{background:#f1f5f9;padding:8px 10px;border-radius:8px;font-size:13px;color:#0b1220}
+
+    .contact a{display:inline-block;margin-right:8px;text-decoration:none;color:var(--accent);font-weight:600}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr} .avatar{width:76px;height:76px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">CR</div>
+      <div>
+        <h1>Christian Rei G. Aguana</h1>
+        <div class="subtitle">BSIT — Major in Cybersecurity • AMA East Rizal</div>
+        <div style="margin-top:6px;color:var(--muted);font-size:13px">USN: <strong>23001005210</strong></div>
+      </div>
+    </header>
+
+    <nav>
+      <a class="btn" href="#about">About</a>
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn" href="#skills">Skills</a>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+      <div class="card" id="about">
+        <h2 style="margin-top:0">About Me</h2>
+        <p style="color:var(--muted);margin-top:8px">Hi! I’m Christian Rei G. Aguana, a BSIT student at AMA East Rizal majoring in Cybersecurity. I’m passionate about technology, information security, and creating solutions that make systems safer and more efficient. I enjoy learning new tools and applying them to real projects.</p>
+        <p style="margin-top:12px;color:var(--muted);font-size:14px"><strong>Looking for:</strong> Internship opportunities, collaborative student projects, and hands-on challenges in cybersecurity and software development.</p>
+      </div>
+
+      <div class="card" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+        <div style="font-weight:700">Quick info</div>
+        <div style="color:var(--muted);font-size:14px">Degree: BSIT</div>
+        <div style="color:var(--muted);font-size:14px">Major: Cybersecurity</div>
+        <div style="color:var(--muted);font-size:14px">School: AMA East Rizal</div>
+        <div style="color:var(--muted);font-size:14px">USN: 23001005210</div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main>
+        <section class="card projects" id="projects">
+          <h2 style="margin-top:0">Projects & Work</h2>
+
+          <!-- Example project item - duplicate/replace these with your actual projects -->
+          <div class="project">
+            <h3>Sample: Network Security Lab Report</h3>
+            <p>Short description: Analysis of a local network using Wireshark and securing weak services. <br><strong>Tools:</strong> Wireshark, VirtualBox, Ubuntu. <br><strong>Date:</strong> June 2025</p>
+          </div>
+
+          <div class="project">
+            <h3>Sample: Simple Password Manager (Proof of Concept)</h3>
+            <p>Short description: A CLI app to securely store passwords using AES encryption. <br><strong>Tools:</strong> Python, Cryptography library. <br><strong>Date:</strong> May 2025</p>
+          </div>
+
+          <p style="color:var(--muted);font-size:13px;margin-top:6px">Tip: For each project add a screenshot, a short description, the tools you used, and a link to the code or demo (GitHub/Drive/YouTube).</p>
+        </section>
+
+        <section class="card" id="skills" style="margin-top:12px">
+          <h2 style="margin-top:0">Skills</h2>
+          <div class="skills" style="margin-top:10px">
+            <ul>
+              <li>Python</li>
+              <li>C++</li>
+              <li>Linux basics</li>
+              <li>Network fundamentals</li>
+              <li>Wireshark</li>
+              <li>Basic penetration testing</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <p style="color:var(--muted);font-size:13px;margin-top:10px">Want these changed? Replace or reorder the list to match your real skills.</p>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card contact" id="contact">
+          <h3 style="margin-top:0">Contact</h3>
+          <p style="color:var(--muted);font-size:14px">Use your school email or link your GitHub/LinkedIn here so people can reach you.</p>
+          <p style="margin-top:10px"><a href="#">Email: yourschoolemail@ama.edu.ph</a></p>
+          <p style="margin-top:6px"><a href="#">GitHub: github.com/your-username</a></p>
+          <p style="margin-top:6px"><a href="#">LinkedIn: linkedin.com/in/yourname</a></p>
+
+          <div style="margin-top:12px;color:var(--muted);font-size:13px">Want a simple contact form added (works with Formspree/Google Forms)? I can add it.</div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin-top:0">Resume (quick)</h3>
+          <p style="color:var(--muted);font-size:14px;margin:0">Christian Rei G. Aguana<br>BSIT — Major in Cybersecurity<br>USN: 23001005210<br>AMA East Rizal</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with a starter HTML template • Need changes? Tell me what to edit.
+    </footer>
+  </div>
+</body>
+</html>
