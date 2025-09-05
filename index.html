@@ -1,138 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 2rem;
-            background-color: #222;
-            color: #fff;
-        }
-        main {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        section {
-            margin-top: 2rem;
-            background: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #222;
-        }
-        .download-btn {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.6rem 1.2rem;
-            background-color: #222;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .download-btn:hover {
-            background-color: #444;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Rei G. Aguana - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #212529;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #343a40;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #495057;
+    }
+    section {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .downloads a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .downloads a:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #212529;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Christian Rei G Aguana, USN: 23001005210</h1>
-        <p>BSIT Student Major in Cybersecurity</p>
-    </header>
-    <main>
-        <section>
-            <h2>Contact</h2>
-            <p>Email: maybeboomie26@gmail.com</p>
-            <p>Phone: +63 981 009 7097</p>
-        </section>
+  <header>
+    <h1>Christian Rei G. Aguana</h1>
+    <p>Student | Aspiring IT Professional</p>
+  </header>
 
-        <section>
-            <h2>Projects & Works for Computer Fundamentals</h2>
-            <p>This space is ready for my future projects and works.</p>
-        </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#works">School Works</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        <!-- Resume Section -->
-        <section>
-            <h2>Resume</h2>
-            <p><strong>Experience:</strong></p>
-            <ul>
-                <li>Intern at TechSecure PH (Dummy) — Assisted in monitoring network activity and writing basic security reports.</li>
-                <li>Volunteer IT Support (Dummy) — Helped troubleshoot hardware/software issues for a small office.</li>
-            </ul>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Christian Rei G. Aguana, currently a college student at AMA East Rizal. I am passionate about technology, programming, and continuously enhancing my knowledge and skill set to be prepared for any challenges ahead.</p>
+  </section>
 
-            <p><strong>Skills:</strong></p>
-            <ul>
-                <li>Cybersecurity Fundamentals</li>
-                <li>Networking Basics</li>
-                <li>Programming: Python, HTML, CSS</li>
-                <li>Problem-solving & Troubleshooting</li>
-            </ul>
+  <section id="works">
+    <h2>School Works</h2>
+    <p>This section will contain my uploaded school works, projects, and other academic-related outputs.</p>
+  </section>
 
-            <p><strong>Education:</strong></p>
-            <ul>
-                <li>AMA East Rizal (Senior High School & College, currently enrolled)</li>
-                <li>Colegio de San Pedro Calungsod (Grades 1–10)</li>
-            </ul>
+  <section id="resume">
+    <h2>Professional Documents</h2>
+    <div class="downloads">
+      <a href="Resume_Aguana.pdf" download>📄 Download Resume</a>
+      <a href="CV_Aguana.pdf" download>📄 Download CV</a>
+      <a href="JobApplication_Aguana.pdf" download>📄 Download Job Application</a>
+    </div>
+  </section>
 
-            <a href="resume.pdf" class="download-btn" target="_blank">Download Resume (PDF)</a>
-        </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>Phone: +63 900 000 0000</p>
+  </section>
 
-        <!-- CV Section -->
-        <section>
-            <h2>Curriculum Vitae (CV)</h2>
-            <p><strong>Personal Information:</strong></p>
-            <ul>
-                <li>Name: Christian Rei G Aguana</li>
-                <li>Email: maybeboomie26@gmail.com</li>
-                <li>Phone: +63 981 009 7097</li>
-            </ul>
-            <p><strong>Education:</strong> AMA East Rizal (Senior High School & College), Colegio de San Pedro Calungsod (Elementary & Junior High)</p>
-            <p><strong>Skills:</strong></p>
-            <ul>
-                <li>Cybersecurity Fundamentals</li>
-                <li>Networking Basics</li>
-                <li>Programming: Python, HTML, CSS</li>
-                <li>Team Collaboration & Communication</li>
-            </ul>
-            <p><strong>Achievements:</strong> Dean’s Lister (Dummy Achievement)</p>
-
-            <a href="cv.pdf" class="download-btn" target="_blank">Download CV (PDF)</a>
-        </section>
-
-        <!-- Job Application Section -->
-        <section>
-            <h2>Job Application</h2>
-            <p><strong>Position Applied For:</strong> IT Support Specialist</p>
-            <p><strong>Cover Letter:</strong></p>
-            <p>Dear Hiring Manager,</p>
-            <p>
-                I am writing to express my interest in the IT Support Specialist position at your company. 
-                As a BSIT student majoring in Cybersecurity, I have developed strong foundational knowledge in networking, 
-                troubleshooting, and IT security. My academic background and internship experience have prepared me 
-                to contribute effectively to your team. 
-            </p>
-            <p>
-                I am eager to apply my skills, learn from experienced professionals, and grow within your organization. 
-                I look forward to the opportunity to discuss how I can be an asset to your team.
-            </p>
-            <p>Sincerely, <br> Christian Rei G Aguana</p>
-
-            <a href="job-application.pdf" class="download-btn" target="_blank">Download Job Application (PDF)</a>
-        </section>
-    </main>
+  <footer>
+    <p>© 2025 Christian Rei G. Aguana | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
